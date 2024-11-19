@@ -1,17 +1,17 @@
 ---
 # Display name
-title: 吳健雄
+title: 彭启航
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Qihang Peng
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Qihang
+last_name: Peng
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 💻
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,92 +20,93 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Undergradute Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: Xingjian College, Tsinghua University
+    url: https://www.xjc.tsinghua.edu.cn/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'pqh22@mails.tsinghua.edu.cn'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
-  - icon: brands/github
-    url: https://github.com/gcushen
+  # - icon: brands/x
+  #   url: https://twitter.com/GetResearchDev
+  # - icon: brands/instagram
+  #   url: https://www.instagram.com/
+  # - icon: brands/github
+    url: https://github.com/pqh22
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://www.linkedin.com/in/%E5%90%AF%E8%88%AA-%E5%BD%AD-48937a311/
+  # - icon: academicons/google-scholar
+  #   url: https://scholar.google.com/
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - 3D Vision
+  - Embodied AI
+
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+  # - area: PhD Artificial Intelligence
+  #   institution: Stanford University
+  #   date_start: 2016-01-01
+  #   date_end: 2020-12-31
+  #   summary: |
+  #     Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+  #   button:
+  #     text: 'Read Thesis'
+  #     url: 'https://example.com'
+  # - area: MEng Artificial Intelligence
+  #   institution: Massachusetts Institute of Technology
+  #   date_start: 2016-01-01
+  #   date_end: 2020-12-31
+  #   summary: |
+  #     GPA: 3.8/4.0
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  #     Courses included:
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - area: Undergraduate Student
+    institution: Xingjian College, Tsinghua University
+    date_start: 2022
+    date_end: Present
     summary: |
-      GPA: 3.4/4.0
+      GPA: 3.94/4.00
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      4.0 Courses included:
+      - Mathematical analysis, Advanced algebra, Probability and Statistics
+      - Theoretical Mechanics, Fluid Mechanics, Engineering Thermodynamics
+      - Pattern Recognition & Machine Learning, Programming
+      - ......
+# work:
+#   - position: Director of Cloud Infrastructure
+#     company_name: GenCoin
+#     company_url: ''
+#     company_logo: ''
+#     date_start: 2021-01-01
+#     date_end: ''
+#     summary: |2-
+#       Responsibilities include:
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - position: Backend Software Engineer
+#     company_name: X
+#     company_url: ''
+#     company_logo: ''
+#     date_start: 2016-01-01
+#     date_end: 2020-12-31
+#     summary: |
+#       Responsibilities include:
+#       - Migrated infrastructure to a new data center
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -114,39 +115,36 @@ skills:
     items:
       - name: Python
         description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
         percent: 100
-        icon: chart-bar
-      - name: SQL
+        icon: [![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev)
+      - name: Pytorch
         description: ''
-        percent: 40
-        icon: circle-stack
+        percent: 80
+        icon: [![My Skills](https://skillicons.dev/icons?i=pytorch)](https://skillicons.dev)
+      - name: Git
+        description: ''
+        percent: 80
+        icon: [![My Skills](https://skillicons.dev/icons?i=git)](https://skillicons.dev)
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
+      - name: Basketball
         description: ''
         percent: 100
-        icon: cat
-      - name: Photography
+        icon: 🏀
+      - name: Game
         description: ''
-        percent: 80
-        icon: camera
+        percent: 100
+        icon: 🎮
+
 
 languages:
-  - name: English
-    percent: 100
   - name: Chinese
+    percent: 100
+  - name: English
     percent: 75
-  - name: Portuguese
+  - name: Janpanese
     percent: 25
 
 # Awards.
@@ -183,4 +181,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hello world! I'm an undergraduate student at Tsinghua University. Hoping to apply my knowledge of mechanics to the field of embodied intelligence, I'm doing reaserch about 3D visual grounding. Now I'm working closely with [Gao Huang](https://www.gaohuang.net/). If you are also interested in this domain, please feel free to contact me.
