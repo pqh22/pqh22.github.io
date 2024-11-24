@@ -114,15 +114,15 @@ skills:
   - name: Technical Skills
     items:
       - name: Python
-        description: ''
+        description: 'Basic programming language'
         percent: 100
         icon: [![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev)
       - name: Pytorch
-        description: ''
+        description: 'My favorite API about deep learning'
         percent: 80
         icon: [![My Skills](https://skillicons.dev/icons?i=pytorch)](https://skillicons.dev)
       - name: Git
-        description: ''
+        description: 'Needless to say'
         percent: 80
         icon: [![My Skills](https://skillicons.dev/icons?i=git)](https://skillicons.dev)
   - name: Hobbies
@@ -151,6 +151,25 @@ languages:
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+awards:
+  - title: Championship & Innovation Award in Autonomous Grand Challenge 2024
+    url: https://opendrivelab.com/challenge2024/
+    date: '2024-6'
+    awarder: CVPR 2024 Award Committee
+    icon: trophy
+
+  - title: National Scholarship
+    date: '2024-11'
+    awarder: Ministry of Education of the People's Republic of China
+    icon: school
+
+  - title: Wang Dazhong Scholarship
+    url: https://www.tsinghua.edu.cn/info/1177/90693.htm
+    certificate_url: https://www.datacamp.com
+    date: '2023-11'
+    awarder: Tsinghua University
+    icon: school
+
 # awards:
 #   - title: Neural Networks and Deep Learning
 #     url: https://www.coursera.org/learn/neural-networks-deep-learning

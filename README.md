@@ -1,54 +1,54 @@
 ---
-# Display name
-title: 彭启航
+# # Display name
+# title: 彭启航
 
-# Name pronunciation (optional)
-name_pronunciation: Qihang Peng
+# # Name pronunciation (optional)
+# name_pronunciation: Qihang Peng
 
-# Full name (for SEO)
-first_name: Qihang
-last_name: Peng
+# # Full name (for SEO)
+# first_name: Qihang
+# last_name: Peng
 
-# Status emoji
-status:
-  icon: 💻
+# # Status emoji
+# status:
+#   icon: 💻
 
-# Is this the primary user of the site?
-superuser: true
+# # Is this the primary user of the site?
+# superuser: true
 
-# Highlight the author in author lists? (true/false)
-highlight_name: true
+# # Highlight the author in author lists? (true/false)
+# highlight_name: true
 
-# Role/position/tagline
-role: Undergradute Student
+# # Role/position/tagline
+# role: Undergradute Student
 
-# Organizations/Affiliations to display in Biography blox
-organizations:
-  - name: Xingjian College, Tsinghua University
-    url: https://www.xjc.tsinghua.edu.cn/
+# # Organizations/Affiliations to display in Biography blox
+# organizations:
+#   - name: Xingjian College, Tsinghua University
+#     url: https://www.xjc.tsinghua.edu.cn/
 
-# Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-profiles:
-  - icon: at-symbol
-    url: 'pqh22@mails.tsinghua.edu.cn'
-    label: E-mail Me
-  # - icon: brands/x
-  #   url: https://twitter.com/GetResearchDev
-  # - icon: brands/instagram
-  #   url: https://www.instagram.com/
-  # - icon: brands/github
-    url: https://github.com/pqh22
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/%E5%90%AF%E8%88%AA-%E5%BD%AD-48937a311/
-  # - icon: academicons/google-scholar
-  #   url: https://scholar.google.com/
-  # - icon: academicons/orcid
-  #   url: https://orcid.org/
+# # Social network links
+# # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+# profiles:
+#   - icon: at-symbol
+#     url: 'pqh22@mails.tsinghua.edu.cn'
+#     label: E-mail Me
+#   # - icon: brands/x
+#   #   url: https://twitter.com/GetResearchDev
+#   # - icon: brands/instagram
+#   #   url: https://www.instagram.com/
+#   # - icon: brands/github
+#     url: https://github.com/pqh22
+#   - icon: brands/linkedin
+#     url: https://www.linkedin.com/in/%E5%90%AF%E8%88%AA-%E5%BD%AD-48937a311/
+#   # - icon: academicons/google-scholar
+#   #   url: https://scholar.google.com/
+#   # - icon: academicons/orcid
+#   #   url: https://orcid.org/
 
-interests:
-  - 3D Vision
-  - Embodied AI
+# interests:
+#   - 3D Vision
+#   - Embodied AI
 
 
 education:
@@ -72,18 +72,18 @@ education:
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: Undergraduate Student
-    institution: Xingjian College, Tsinghua University
-    date_start: 2022
-    date_end: Present
-    summary: |
-      GPA: 3.94/4.00
+  # - area: Undergraduate Student
+  #   institution: Xingjian College, Tsinghua University
+  #   date_start: 2022
+  #   date_end: Present
+  #   summary: |
+  #     GPA: 3.94/4.00
       
-      4.0 Courses included:
-      - Mathematical analysis, Advanced algebra, Probability and Statistics
-      - Theoretical Mechanics, Fluid Mechanics, Engineering Thermodynamics
-      - Pattern Recognition & Machine Learning, Programming
-      - ......
+  #     4.0 Courses included:
+  #     - Mathematical analysis, Advanced algebra, Probability and Statistics
+  #     - Theoretical Mechanics, Fluid Mechanics, Engineering Thermodynamics
+  #     - Pattern Recognition & Machine Learning, Programming
+  #     - ......
 # work:
 #   - position: Director of Cloud Infrastructure
 #     company_name: GenCoin
@@ -110,42 +110,42 @@ education:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        percent: 100
-        icon: [![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev)
-      - name: Pytorch
-        description: ''
-        percent: 80
-        icon: [![My Skills](https://skillicons.dev/icons?i=pytorch)](https://skillicons.dev)
-      - name: Git
-        description: ''
-        percent: 80
-        icon: [![My Skills](https://skillicons.dev/icons?i=git)](https://skillicons.dev)
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Basketball
-        description: ''
-        percent: 100
-        icon: 🏀
-      - name: Game
-        description: ''
-        percent: 100
-        icon: 🎮
+# skills:
+#   - name: Technical Skills
+#     items:
+#       - name: Python
+#         description: ''
+#         percent: 100
+#         # icon: [![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev)
+#       - name: Pytorch
+#         description: ''
+#         percent: 80
+#         # icon: [![My Skills](https://skillicons.dev/icons?i=pytorch)](https://skillicons.dev)
+#       - name: Git
+#         description: ''
+#         percent: 80
+#         # icon: [![My Skills](https://skillicons.dev/icons?i=git)](https://skillicons.dev)
+#   - name: Hobbies
+#     color: '#eeac02'
+#     color_border: '#f0bf23'
+#     items:
+#       - name: Basketball
+#         description: ''
+#         percent: 100
+#         icon: 🏀
+#       - name: Game
+#         description: ''
+#         percent: 100
+#         icon: 🎮
 
 
-languages:
-  - name: Chinese
-    percent: 100
-  - name: English
-    percent: 75
-  - name: Janpanese
-    percent: 25
+# languages:
+#   - name: Chinese
+#     percent: 100
+#   - name: English
+#     percent: 75
+#   - name: Janpanese
+#     percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
