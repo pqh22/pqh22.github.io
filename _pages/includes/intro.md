@@ -1,0 +1,2 @@
+# 📖 About me
+Hello world! I'm a third-year undergraduate student at [Xingjian College, Tsinghua University](https://www.xjc.tsinghua.edu.cn/). My research interests lie at the intersection of vision, machine learning, and robotics. Now I'm working closely with [Prof.Gao Huang](https://www.gaohuang.net/). If you are also interested in this domain, please feel free to contact me.

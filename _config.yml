@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Qihang"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Qihang Peng"
 description              : &description "A third-year undergraduate at Tsinghua University"
@@ -21,10 +21,10 @@ repository               : "pqh22/pqh22.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "pqh.png"
   name             : "Qihang Peng"
   pronouns         : "he/his"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "A third-year undergraduate at Tsinghua University"
   location         : "Beijing, China"
   employer         : "Tsinghua University"
   uri              : # URL
