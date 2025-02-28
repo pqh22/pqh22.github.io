@@ -156,3 +156,14 @@ body {
   border-radius: 5px;
 }
 
+.bibtex-container pre {
+  text-align: left;  /* 让文本左对齐 */
+  background-color: #f8f8f8; /* 轻微背景色，增加可读性 */
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto; /* 确保超出部分可滚动 */
+  font-family: "Courier New", monospace; /* 代码字体 */
+  font-size: 14px; /* 调整字体大小 */
+}
+
+
