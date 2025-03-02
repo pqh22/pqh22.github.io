@@ -11,7 +11,10 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
+{% capture md_content %}{% include_relative includes/pub.md %}{% endcapture %}
+{{ md_content | markdownify }}
+
+<!-- {% include base_path %}
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/pt.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -35,7 +38,7 @@ Henry Zheng*, Shi Hao*, **Qihang Peng**, et al.
 - Use LLM and Ground Truth to enhance semantic details in prompt to reduce the ambiguity during training.
 - Extract individual view semantics and enriches visual representation with global scene-level semantic.
 </div>
-</div>
+</div> -->
 
 
 
