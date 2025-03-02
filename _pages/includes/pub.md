@@ -1,6 +1,6 @@
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/pt.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='https://pqh22.github.io/images/pt.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [ProxyTransformation : Preshaping Point Cloud Manifold With Proxy Attention For 3D Visual Grounding](https://arxiv.org/abs/2502.19247) \\
@@ -12,7 +12,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/dg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='https://pqh22.github.io/images/dg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [DenseGrounding: Improving Dense Language-Vision Semantics for Ego-centric 3D Visual Grounding](https://arxiv.org/abs/2502.19247) \\
