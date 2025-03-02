@@ -16,7 +16,7 @@
 <div class='paper-box-text' markdown="1">
 
 [DenseGrounding: Improving Dense Language-Vision Semantics for Ego-centric 3D Visual Grounding](https://arxiv.org/abs/2502.19247) \\
-Henry Zheng*, Shi Hao*, **Qihang Peng**, et al. 
+Henry Zheng\*, Shi Hao\*, **Qihang Peng**, et al. 
 
 [**ICLR 2025**](https://iclr.cc/virtual/2025/poster/28704) | [**AGC 2024**](https://opendrivelab.com/challenge2024/#multiview_3d_visual_grounding)
 - Use LLM and Ground Truth to enhance semantic details in prompt to reduce the ambiguity during training.
