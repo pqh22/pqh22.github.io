@@ -1,4 +1,3 @@
-# 📝 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='https://pqh22.github.io/images/pt.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
