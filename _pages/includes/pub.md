@@ -4,7 +4,7 @@
 [ProxyTransformation : Preshaping Point Cloud Manifold With Proxy Attention For 3D Visual Grounding](https://arxiv.org/abs/2502.19247) \\
 **Qihang Peng**, Henry Zheng, Gao Huang
 
-[**Project**](https://speechresearch.github.io/fastspeech/) | [**Code**](https://github.com/pqh22/ProxyTransformation)
+[**Project**](https://pqh22.github.io/projects/ProxyTransformation/index.html) | [**Code**](https://github.com/pqh22/ProxyTransformation)
 - Make full use of multimodal information in ego-centric 3D visual grounding for point enhancement.
 - State-of-the-art on [EmbodiedScan](https://tai-wang.github.io/embodiedscan/) benchmark.
 </div>
