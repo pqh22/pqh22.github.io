@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Trajectory Planning.">
+  <meta name="keywords" content="ColaVLA">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ColaVLA</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://pqh22.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+      <!-- More Research Dropdown commented out -->
+      <!--
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More Research</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">HyperNeRF</a>
+          <a class="navbar-item" href="https://nerfies.github.io">Nerfies</a>
+          <a class="navbar-item" href="https://latentfusion.github.io">LatentFusion</a>
+          <a class="navbar-item" href="https://photoshape.github.io">PhotoShape</a>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel <br> Trajectory Planning in Autonomous Driving</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://pqh22.github.io">Qihang Peng</a><sup>1,2,3</sup>,</span>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Tsinghua University </span>
+            <span class="author-block"><sup>2</sup>CUHK MMLab </span>
+            <span class="author-block"><sup>3</sup>Voyager Research, Didi Chuxing </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2502.19247"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Paper Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2502.19247"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/pqh22/ColaVLA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Embodied intelligence requires agents to interact with 3D environments in real time based on language instructions. A foundational task in this domain is ego-centric 3D visual grounding. However, the point clouds rendered from RGB-D images retain a large amount of redundant background data and inherent noise, both of which can interfere with the manifold structure of the target regions. Existing point cloud enhancement methods often require a tedious process to improve the manifold, which is not suitable for real-time tasks. We propose Proxy Transformation suitable for multimodal task to efficiently improve the point cloud manifold. Our method first leverages Deformable Point Clustering to identify the point cloud sub-manifolds in target regions. Then, we propose a Proxy Attention module that utilizes multimodal proxies to guide point cloud transformation. Built upon Proxy Attention, we design a submanifold transformation generation module where textual information globally guides translation vectors for different submanifolds, optimizing relative spatial relationships of target regions. Simultaneously, image information guides linear transformations within each submanifold, refining the local point cloud manifold of target regions. Extensive experiments demonstrate that Proxy Transformation significantly outperforms all existing methods, achieving an impressive improvement of 7.49% on easy targets and 4.60% on hard targets, while reducing the computational overhead of attention blocks by 40.6%. These results establish a new SOTA in ego-centric 3D visual grounding, showcasing the effectiveness and robustness of our approach.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">
+            <span class="icon">
+              🔥
+            </span>
+            Highlight
+          </h2>
+          <div class="content has-text-justified">
+            <ul>
+              <!-- <li><strong>Unified Framework for Point-language Understanding and Generation.</strong> -->
+              <li><strong>Multi-modal point cloud enhancement.</strong>
+                We propose ColaVLA, enabling multimodal point cloud augmentation in the context of 3D visual grounding.
+              </li>
+              <li><strong>Deformable point clustering.</strong>
+                To obtain more desirable submanifolds for target regions, we design deformable point clustering, utilizing a 3D offset network to generate flexible and adaptive deformable clusters suited to diverse scenes.
+              </li>
+              <li><strong>Proxy Attention.</strong>
+                We introduce a generalized proxy attention mechanism, allowing the selection of different proxy tokens based on task requirements, achieving linear computational complexity.
+              </li>
+              <li><strong>State-of-the-art results</strong>
+                Our model significantly outperforms all existing methods, achieving an impressive improvement of 7.49% on easy targets and 4.60% on hard targets, while reducing the computational overhead of attention blocks by 40.6%, establishing a new SOTA in ego-centric 3D visual grounding.
+              </li>
+            </ul>
+          </div>
+          <div class="container is-max-desktop has-text-centered">
+            <img src="./static/images/illustrate_only_intutive.drawio.png" 
+                  alt="Illustration of Method Motivation" 
+                  class="illustration-image">
+            <p class="image-caption">illustration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Methods. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            In ego-centric 3D visual grounding, we first generate a uniform grid prior in space and perform an initial clustering. Each cluster is then processed by an offset network to obtain deformable offsets for the cluster centers, allowing the initial grid prior to be shifted toward more important regions and enabling clustering to capture the sub-manifold of the target region. We utilize a proxy block based on proxy attention to process multi-modal information, obtaining a transformation matrix and translation vector for each sub-manifold. This optimizes the relative positions and internal structures of the sub-manifolds, which are subsequently fed into downstream structures for feature learning and fusion, ultimately achieving precise localization of the target object in the scene.
+          </p>
+        </div>
+        <div class="container is-max-desktop has-text-centered">
+          <img src="./static/images/framework.png" 
+                alt="Framework" 
+                class="illustration-image">
+          <p class="image-caption">overall framework</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+
+    <!-- Visualization. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Visualization</h2>
+        <div class="content has-text-justified">
+          <p>
+            With our deformable point clustering and Proxy Transformation, the point cloud structure in target regions is optimized, providing higher-quality data for subsequent feature learning and fusion. As shown in our visualization results, reference objects in these regions are small and difficult to distinguish, but with the enhanced manifold structure, our model effectively captures the relationships between target and reference objects, achieving improved grounding performance. 
+          </p>
+        </div>
+        <div class="content">
+          <img src="./static/images/visualization.drawio.png" alt="Visualization Image">
+          <p class="image-caption">visualization</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Visualization. -->
+
+
+    <div class="container is-max-desktop">
+      <!-- Experiments -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Experiments</h2>
+          <div class="content has-text-justified">
+            <p>
+              As shown in the figure below, Proxy Transformation achieves a notable <strong>7.49%</strong> and <strong>4.60%</strong> improvement over the previous strongest baseline, <i>EmbodiedScan</i>, on the <strong>Overall@0.25</strong> and <strong>Overall@0.50</strong>. 
+            </p>
+            <p>
+              Although only trained on the <i>mini dataset</i>, our method even surpasses the baseline trained on the full dataset. Through deformable point clustering, our model focuses on the most crucial target regions in the scene, reducing extra computational overhead caused by redundant point clouds and improving efficiency. Additionally, a grid prior preserves essential original spatial information, mitigating early training instability.
+            </p>
+            <p>
+              Recognizing that text information provides global positional relationships among different submanifolds and image information offers local semantic details within each submanifold, we designed a generalized proxy attention mechanism to guide local transformations of the selected point cloud submanifolds. These transformations optimize local point cloud structures for each submanifold, ultimately providing higher-quality data for subsequent feature extraction and fusion.
+            </p>
+            <p>
+              For more details on the ablation studies, please refer to the original paper.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Main Results Image -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/main_results.png" 
+                alt="Main Experimental Results"
+                class="experiment-image">
+          <p class="image-caption">main results</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- BibTeX. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">BibTeX</h2>  <!-- 只让标题居中 -->
+        <div class="bibtex-container">
+          <pre>
+@inproceedings{peng2025proxytransformation,
+  title={ProxyTransformation: Preshaping Point Cloud Manifold With Proxy Attention For 3D Visual Grounding},
+  author={Peng, Qihang and Zheng, Henry and Huang, Gao},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={24582--24592},
+  year={2025}
+}
+          </pre>
+        </div>
+      </div>
+    </div>
+    <!--/ BibTeX. -->
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/pdf/2502.19247">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/pqh22" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            We thank  <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for their project page template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
