@@ -75,6 +75,14 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://pqh22.github.io">Qihang Peng</a><sup>1,2,3</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=_XZonAsAAAAJ&hl=en">Xuesong Chen</a><sup>2,3</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/pfxnb">Chenye Yang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://shishaoshuai.com/">Shaoshuai Shi</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.ee.cuhk.edu.hk/~hsli/">Hongsheng Li</a><sup>2</sup>
             </span>
           </div>
 
@@ -88,7 +96,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2502.19247"
+                <a href="https://arxiv.org/pdf/2512.22939"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -98,7 +106,7 @@
               </span>
               <!-- Paper Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2502.19247"
+                <a href="https://arxiv.org/abs/2512.22939"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -132,7 +140,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Embodied intelligence requires agents to interact with 3D environments in real time based on language instructions. A foundational task in this domain is ego-centric 3D visual grounding. However, the point clouds rendered from RGB-D images retain a large amount of redundant background data and inherent noise, both of which can interfere with the manifold structure of the target regions. Existing point cloud enhancement methods often require a tedious process to improve the manifold, which is not suitable for real-time tasks. We propose Proxy Transformation suitable for multimodal task to efficiently improve the point cloud manifold. Our method first leverages Deformable Point Clustering to identify the point cloud sub-manifolds in target regions. Then, we propose a Proxy Attention module that utilizes multimodal proxies to guide point cloud transformation. Built upon Proxy Attention, we design a submanifold transformation generation module where textual information globally guides translation vectors for different submanifolds, optimizing relative spatial relationships of target regions. Simultaneously, image information guides linear transformations within each submanifold, refining the local point cloud manifold of target regions. Extensive experiments demonstrate that Proxy Transformation significantly outperforms all existing methods, achieving an impressive improvement of 7.49% on easy targets and 4.60% on hard targets, while reducing the computational overhead of attention blocks by 40.6%. These results establish a new SOTA in ego-centric 3D visual grounding, showcasing the effectiveness and robustness of our approach.
+            Autonomous driving requires generating safe and reliable trajectories from complex multimodal inputs. Traditional modular pipelines separate perception, prediction, and planning, while recent end-to-end (E2E) systems learn them jointly. Vision–language models (VLMs) further enrich this paradigm by introducing cross-modal priors and commonsense reasoning, yet current VLM-based planners face three key challenges: (i) a mismatch between discrete text reasoning and continuous control, (ii) high latency from autoregressive chain-of-thought decoding, and (iii) inefficient or non-causal planners that limit real-time deployment. We propose ColaVLA, a unified vision–language–action framework that transfers reasoning from text to a unified latent space and couples it with a hierarchical, parallel trajectory decoder. The Cognitive Latent Reasoner compresses scene understanding into compact, decision-oriented meta-action embeddings through ego-adaptive selection and only two VLM forward passes. The Hierarchical Parallel Planner then generates multi-scale, causality-consistent trajectories in a single forward pass. Together, these components preserve the generalization and interpretability of VLMs while enabling efficient, accurate and safe trajectory generation. Experiments on the nuScenes benchmark show that ColaVLA achieves state-of-the-art performance in both open-loop and closed-loop settings with favorable efficiency and robustness.
           </p>
         </div>
       </div>
@@ -149,30 +157,33 @@
             <span class="icon">
               🔥
             </span>
-            Highlight
+            Highlights
           </h2>
           <div class="content has-text-justified">
             <ul>
               <!-- <li><strong>Unified Framework for Point-language Understanding and Generation.</strong> -->
-              <li><strong>Multi-modal point cloud enhancement.</strong>
-                We propose ColaVLA, enabling multimodal point cloud augmentation in the context of 3D visual grounding.
-              </li>
-              <li><strong>Deformable point clustering.</strong>
-                To obtain more desirable submanifolds for target regions, we design deformable point clustering, utilizing a 3D offset network to generate flexible and adaptive deformable clusters suited to diverse scenes.
+              <li><strong>Cognitive Latent Reasoning (text CoT → latent reasoning).</strong>
+                We relocate chain-of-thought from discrete text to a compact latent space: an ego-adaptive router keeps only safety-critical cues, and a latent “rethink & decide” stage produces a driving strategy without autoregressive text decoding.              </li>
+              <li><strong>Hierarchical Parallel Planner (one-pass, causal, multi-scale).</strong>
+                A multi-stage intent-to-motion decoder generates coarse-to-fine trajectories in parallel with a causality-preserving hybrid attention mask, enabling efficient and consistent multi-scale planning in a single forward pass.
               </li>
               <li><strong>Proxy Attention.</strong>
                 We introduce a generalized proxy attention mechanism, allowing the selection of different proxy tokens based on task requirements, achieving linear computational complexity.
               </li>
-              <li><strong>State-of-the-art results</strong>
-                Our model significantly outperforms all existing methods, achieving an impressive improvement of 7.49% on easy targets and 4.60% on hard targets, while reducing the computational overhead of attention blocks by 40.6%, establishing a new SOTA in ego-centric 3D visual grounding.
+              <li><strong>State-of-the-art performance on nuScenes</strong>
+                Open-loop: <strong>0.30m</strong> average L2 and <strong>0.23%</strong> collision rate. Closed-loop (NeuroNCAP): <strong>3.48</strong> score with <strong>36.8%</strong> collision rate (top-1 strategy for realistic decision making).
+              </li>
+              <li>
+                <strong>Low latency for real-time deployment.</strong>
+                End-to-end inference latency is <strong>727 ms/frame</strong> on a single NVIDIA H20 (w/o flash-attention in the VLM), substantially faster than text-based VLM planners that require multiple forward passes.
               </li>
             </ul>
           </div>
           <div class="container is-max-desktop has-text-centered">
-            <img src="./static/images/illustrate_only_intutive.drawio.png" 
-                  alt="Illustration of Method Motivation" 
+            <img src="./static/images/illustrate.png" 
+                  alt="Illustration of reasoning paradigm" 
                   class="illustration-image">
-            <p class="image-caption">illustration</p>
+            <p class="image-caption">From text chain-of-thought to cognitive latent reasoning for efficient planning.</p>
           </div>
         </div>
       </div>
@@ -187,14 +198,27 @@
 
         <div class="content has-text-justified">
           <p>
-            In ego-centric 3D visual grounding, we first generate a uniform grid prior in space and perform an initial clustering. Each cluster is then processed by an offset network to obtain deformable offsets for the cluster centers, allowing the initial grid prior to be shifted toward more important regions and enabling clustering to capture the sub-manifold of the target region. We utilize a proxy block based on proxy attention to process multi-modal information, obtaining a transformation matrix and translation vector for each sub-manifold. This optimizes the relative positions and internal structures of the sub-manifolds, which are subsequently fed into downstream structures for feature learning and fusion, ultimately achieving precise localization of the target object in the scene.
+            ColaVLA is a unified vision–language–action framework consisting of two core components:
+            <strong>(1) Cognitive Latent Reasoner</strong> and <strong>(2) Hierarchical Parallel Planner</strong>.
+            Multi-view image sequences are encoded into visual tokens (objects & maps), which are fused with an ego token and a fixed driving prompt.
+            An <strong>ego-adaptive router</strong> selects safety-critical visual cues to form a compact pruned context.
+            The model then performs a <strong>latent rethinking</strong> step with a bank of learnable <strong>meta-queries</strong>
+            and finally outputs a discrete <strong>driving strategy</strong>.
+          </p>
+          <p>
+            Conditioned on the selected strategy, we retrieve the corresponding <strong>meta-action</strong> from an action bank and expand it into
+            <strong>multi-scale trajectory targets</strong> via temporal embeddings and resampling.
+            The <strong>Hierarchical Parallel Planner</strong> concatenates the pruned context and all scale-wise targets, and performs
+            <strong>one-pass parallel decoding</strong> with a <strong>causality-preserving hybrid mask</strong>:
+            global context aggregation to all scales, bidirectional interaction within each scale, and strictly causal information flow from coarser to finer scales.
+            This yields efficient, causal and interpretable multi-scale trajectories.
           </p>
         </div>
         <div class="container is-max-desktop has-text-centered">
           <img src="./static/images/framework.png" 
-                alt="Framework" 
+                alt="ColaVLA Framework" 
                 class="illustration-image">
-          <p class="image-caption">overall framework</p>
+          <p class="image-caption">Overall framework of ColaVLA.</p>
         </div>
       </div>
     </div>
@@ -206,12 +230,14 @@
         <h2 class="title is-3">Visualization</h2>
         <div class="content has-text-justified">
           <p>
-            With our deformable point clustering and Proxy Transformation, the point cloud structure in target regions is optimized, providing higher-quality data for subsequent feature learning and fusion. As shown in our visualization results, reference objects in these regions are small and difficult to distinguish, but with the enhanced manifold structure, our model effectively captures the relationships between target and reference objects, achieving improved grounding performance. 
+            We visualize representative driving scenes and the predicted trajectories to highlight how ColaVLA couples compact latent reasoning
+            with hierarchical parallel decoding. The qualitative results demonstrate robust behavior under complex multi-agent interactions,
+            long-horizon intent understanding, and safety-critical scenarios.
           </p>
         </div>
         <div class="content">
-          <img src="./static/images/visualization.drawio.png" alt="Visualization Image">
-          <p class="image-caption">visualization</p>
+          <img src="./static/images/visualization.png" alt="Visualization Image">
+          <p class="image-caption">Qualitative visualization of planning results.</p>
         </div>
       </div>
     </div>
@@ -225,31 +251,38 @@
           <h2 class="title is-3">Experiments</h2>
           <div class="content has-text-justified">
             <p>
-              As shown in the figure below, Proxy Transformation achieves a notable <strong>7.49%</strong> and <strong>4.60%</strong> improvement over the previous strongest baseline, <i>EmbodiedScan</i>, on the <strong>Overall@0.25</strong> and <strong>Overall@0.50</strong>. 
+              <strong>Open-loop (nuScenes).</strong>
+              ColaVLA achieves strong accuracy and safety with <strong>0.30m</strong> average L2 error and <strong>0.23%</strong> collision rate,
+              demonstrating precise trajectory prediction while operating efficiently in the latent action space.
             </p>
             <p>
-              Although only trained on the <i>mini dataset</i>, our method even surpasses the baseline trained on the full dataset. Through deformable point clustering, our model focuses on the most crucial target regions in the scene, reducing extra computational overhead caused by redundant point clouds and improving efficiency. Additionally, a grid prior preserves essential original spatial information, mitigating early training instability.
+              <strong>Closed-loop (NeuroNCAP).</strong>
+              ColaVLA establishes robust closed-loop driving with a <strong>3.48</strong> NeuroNCAP score and <strong>36.8%</strong> collision rate
+              under a realistic top-1 strategy setting, showing improved safety and generalization in safety-critical scenarios.
             </p>
             <p>
-              Recognizing that text information provides global positional relationships among different submanifolds and image information offers local semantic details within each submanifold, we designed a generalized proxy attention mechanism to guide local transformations of the selected point cloud submanifolds. These transformations optimize local point cloud structures for each submanifold, ultimately providing higher-quality data for subsequent feature extraction and fusion.
-            </p>
-            <p>
-              For more details on the ablation studies, please refer to the original paper.
+              For detailed metrics, ablations, and additional analyses, please refer to the paper.
             </p>
           </div>
         </div>
       </div>
   
-      <!-- Main Results Image -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <img src="./static/images/main_results.png" 
-                alt="Main Experimental Results"
-                class="experiment-image">
-          <p class="image-caption">main results</p>
+      <div class="columns is-centered">
+        <div class="column is-half has-text-centered">
+          <img src="./static/images/open_loop_results.png"
+               alt="Open-loop Results"
+               class="experiment-image">
+          <p class="image-caption">Open-loop results on nuScenes.</p>
+        </div>
+        <div class="column is-half has-text-centered">
+          <img src="./static/images/close_loop_results.png"
+               alt="Closed-loop Results"
+               class="experiment-image">
+          <p class="image-caption">Closed-loop results on NeuroNCAP.</p>
         </div>
       </div>
     </div>
+    <!-- / Experiments -->
 
     
 
@@ -264,13 +297,15 @@
         <h2 class="title is-3 has-text-centered">BibTeX</h2>  <!-- 只让标题居中 -->
         <div class="bibtex-container">
           <pre>
-@inproceedings{peng2025proxytransformation,
-  title={ProxyTransformation: Preshaping Point Cloud Manifold With Proxy Attention For 3D Visual Grounding},
-  author={Peng, Qihang and Zheng, Henry and Huang, Gao},
-  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
-  pages={24582--24592},
-  year={2025}
-}
+            @misc{peng2025colavlaleveragingcognitivelatent,
+              title={ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving}, 
+              author={Qihang Peng and Xuesong Chen and Chenye Yang and Shaoshuai Shi and Hongsheng Li},
+              year={2025},
+              eprint={2512.22939},
+              archivePrefix={arXiv},
+              primaryClass={cs.CV},
+              url={https://arxiv.org/abs/2512.22939}, 
+            }
           </pre>
         </div>
       </div>
@@ -284,7 +319,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="https://arxiv.org/pdf/2502.19247">
+         href="https://arxiv.org/pdf/2512.22939">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/pqh22" class="external-link" disabled>
