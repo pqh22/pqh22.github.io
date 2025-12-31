@@ -1,3 +1,15 @@
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv 2025</div><img src='https://pqh22.github.io/projects/ColaVLA/static/images/framework.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving](https://arxiv.org/abs/2512.22939) \\
+**Qihang Peng**, Xuesong Chen, Chenye Yang, Shaoshuai Shi, Hongsheng Li 
+
+[**Project**](https://pqh22.github.io/projects/ColaVLA/index.html) | [**Code**](https://github.com/pqh22/ColaVLA)
+- ColaVLA moves VLM reasoning into a compact latent space and decodes multi-scale causal trajectories in one pass.
+- State-of-the-art in both open-loop and closed-loop settings with favorable efficiency and robustnesson on the nuScenes benchmark.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='https://pqh22.github.io/images/pt.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
