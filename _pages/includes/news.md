@@ -1,4 +1,5 @@
 # 🔥 News
+- [2026.02] One paper is accepted by **CVPR 2026** (Main Conference).
 - [2025.06] Awarded by **Sensetime Scholarship**. 30 undergraduate students nationwide.
 - [2025.02] One paper is accepted by **CVPR 2025**. My first article as the first author ! Please visit our [project page](https://pqh22.github.io/projects/ProxyTransformation/index.html) and [arxiv](https://arxiv.org/abs/2502.19247) for details. Welcome to communicate and discuss with me !
 - [2025.01] One paper is accepted by **ICLR 2025**.
