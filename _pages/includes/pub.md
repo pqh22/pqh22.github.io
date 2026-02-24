@@ -1,4 +1,4 @@
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Main Conference</div><img src='https://pqh22.github.io/projects/ColaVLA/static/images/framework.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='https://pqh22.github.io/projects/ColaVLA/static/images/framework.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving](https://arxiv.org/abs/2512.22939) \\
