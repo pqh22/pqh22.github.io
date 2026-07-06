@@ -97,7 +97,18 @@ heading {
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700
+  font-weight: 700;
+  color: #6b3fa0;
+}
+
+papertitle a {
+  color: #6b3fa0;
+  text-decoration: none;
+}
+
+papertitle a:focus,
+papertitle a:hover {
+  color: #f09228;
 }
 
 name {
